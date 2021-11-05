@@ -1,0 +1,17 @@
+#include<iostream>
+#include<conio.h>
+#include<cstdlib>
+using namespace std;
+int main(){
+	int number, dice;
+	cout << "Enter how many times the dice should be rolled: ";
+	cin >> number;
+	cout << endl;
+	srand(10);
+	for (int i = 0; i < number; i++){
+		dice = (rand() % 6) + 1;
+		cout << "DICE: " << dice  << endl;
+	}
+	_getch();
+	return 0;
+}
